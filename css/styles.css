@@ -1,4 +1,5 @@
 /* General features */
+
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -6,6 +7,8 @@ body {
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -16,10 +19,45 @@ button {
   cursor: pointer;
 }
 
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* Header */
 .header {
 }
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .header-navigation {
+  display: flex;
 }
 
 .header-logo {
@@ -31,6 +69,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
 }
 
 .logo-studio-header {
@@ -38,9 +77,14 @@ button {
 }
 
 .header-navigation-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-navigation-item {
+}
+
+.header-navigation-link {
 }
 
 .header-navigation-list .header-navigation-link {
@@ -62,9 +106,14 @@ button {
 }
 
 .header-address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-address-item {
+}
+
+.heared-address-link {
 }
 
 .header-address-list .heared-address-link {
@@ -83,6 +132,9 @@ button {
 /* Sections common features */
 
 .section-common-features {
+  margin: 0;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .section-title {
@@ -121,6 +173,7 @@ button {
 
 .section-one-background {
   background-color: #2e2f42;
+  height: 600px;
 }
 
 .main-title {
@@ -131,8 +184,20 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  max-width: 496px;
+  margin-top: 188;
+  margin-bottom: 48;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
+.section-common-features .section-one-background .container {
+  display: flex;
+  gap: 48px;
+  flex-direction: column;
+  justify-content: center;
+}
 .main-btn {
   font-weight: 500;
   font-size: 16px;
@@ -141,6 +206,16 @@ button {
   letter-spacing: 0.04em;
   color: #ffffff;
   background-color: #4d5ae5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  min-width: 169px;
+  height: 56px;
+  border-radius: 4px;
+  border: none;
+  padding: 16px 32px;
+  margin-top: 48px;
+  margin-bottom: 188px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .main-btn:hover,
@@ -149,6 +224,10 @@ button {
 }
 
 /* Description of advantages section two*/
+
+.section-two-background {
+  height: 344px;
+}
 .section-two-title {
   color: #2e2f42;
 }
@@ -159,6 +238,19 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.section-list {
+  margin: o auto;
+  height: 104px;
+  width: 1128;
+  padding: 120px 165px;
+  display: flex;
+  gap: 24px;
+}
+
+.section-list-item {
+  flex-basis: calc(100%-72px / 4);
 }
 
 /* Our Team section three*/
