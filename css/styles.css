@@ -27,7 +27,7 @@ h3 {
 }
 
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -47,8 +47,13 @@ h3 {
   overflow: hidden;
 }
 
+img {
+  display: block;
+}
+
 /* Header */
 .header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .header .container {
@@ -58,6 +63,7 @@ h3 {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -94,6 +100,7 @@ h3 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .header-navigation-list .header-navigation-link:hover,
@@ -173,7 +180,7 @@ h3 {
 
 .section-one-background {
   background-color: #2e2f42;
-  height: 600px;
+  padding: 188px 0;
 }
 
 .main-title {
@@ -192,12 +199,6 @@ h3 {
   text-align: center;
 }
 
-.section-common-features .section-one-background .container {
-  display: flex;
-  gap: 48px;
-  flex-direction: column;
-  justify-content: center;
-}
 .main-btn {
   display: block;
   font-weight: 500;
@@ -214,7 +215,6 @@ h3 {
   border: none;
   padding: 16px 32px;
   margin-top: 48px;
-  margin-bottom: 188px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -227,11 +227,22 @@ h3 {
 /* Description of advantages section two*/
 
 .section-two-background {
-  height: 344px;
+  padding: 120px 0;
 }
 .section-two-title {
   color: #2e2f42;
 }
+
+.section-two-list {
+  margin: o auto;
+  display: flex;
+  gap: 24px;
+}
+
+.section-two-list-item {
+  flex-basis: calc(100%-72px / 4);
+}
+
 .section-two-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -239,33 +250,46 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
-.section-list {
-  margin: o auto;
-  height: 104px;
-  width: 1128;
-  padding: 120px 165px;
-  display: flex;
-  gap: 24px;
-}
-
-.section-list-item {
-  flex-basis: calc(100%-72px / 4);
+.section-two-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
 }
 
 /* Our Team section three*/
+
 .section-three-background {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .section-three-title {
   text-transform: capitalize;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
+.section-three-list {
+  display: flex;
+  gap: 24px;
+}
+
 .section-three-list-item {
   background-color: #ffffff;
+  flex-basis: calc((100% - 72px) / 4);
+  border-radius: 0 0 4px 4px;
 }
+
+.team-foto {
+}
+
+.section-three-list-item-card {
+  padding: 32px 0;
+}
+
 .section-three-subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -273,12 +297,30 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.section-three-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
 }
 
 /* Our Portfolio section four*/
+
+.section-four-background {
+}
+
 .section-four-title {
   text-transform: capitalize;
   color: #2e2f42;
+}
+.section-four-list {
+}
+
+.section-four-list-item {
 }
 .section-four-subtitle {
   font-weight: 500;
@@ -287,6 +329,9 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+.section-four-text {
 }
 
 /* Footer */
